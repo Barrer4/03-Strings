@@ -13,7 +13,13 @@
         let suma = window.prompt('Por favor, introduzca una suma. Ejemplo: 23+56')
         let mas = suma.indexOf('+')
         console.log(`Usted ha introducido los siguietes sumandos: ${suma.substring(0,mas)} y ${suma.substring(mas+1)}`)
-    
+
+        
+        // Nota: había que devolver un typeof Number, no un string
+
+        console.log(parseInt(suma.substring(0,mas)))
+        console.log('y')
+        console.log(parseInt(suma.substring(mas+1)))
     </script>
 </body>
 </html>
